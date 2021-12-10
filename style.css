@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: #F7F1F0;
+    font-family: "微軟正黑體";
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    padding-left: 290px;
+}
+section{
+    min-height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+span{
+    color: #d195c9;/*#D2A2CC*/
+}
+/*header*/
+header{
+    height: 100%;
+    width: 300px;
+    left: 0%;
+    top: 0%;
+    background-color: #C3A6A0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    position: fixed;
+    font-size: 23px;
+    color: #262220;
+    font-weight: bolder;
+}
+header .me img{
+    height: 180px;
+    width: 180px;
+    border-radius: 100%; 
+    border: 3px double #D2A2CC;
+    object-fit: cover;
+}
+header .sidebar{
+    width: 100%;
+}
+header .sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+header .sidebar ul li a{
+    display: block;
+    position: relative;
+    font-size: 23px;
+    text-decoration: none;
+    margin: 30px 0;
+    color: #443832;/*#262220*/
+    letter-spacing: 3px;
+    font-weight: 1000;
+}
+header .sidebar ul li a:after{
+    content: "";
+}
+header .sidebar ul li a:hover:after{
+    margin-left: -60px;
+    transition-duration: 0.5s;
+}
+.social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+.social-item {
+	height: 10px;
+	width: 10px;
+	margin: 10px 37px;
+}
+.social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+.social-item:hover img {
+	filter: grayscale(0);
+}
+/*header End*/
+
+/*myself*/
+#myself .self{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#myself .word{
+    text-align: center;
+    color: #6d9daf;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+#myself .word2{
+    text-align: center;
+    color: rgb(151, 146, 146);
+    font-size: 30px;
+}
+@keyframes type {
+    from {width: 0;}
+}
+#myself .word h1{
+    width: 18em;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 3s steps(18);
+}
+/*myself End*/
+
+/*skill*/
+#skill .sborder{
+    margin-top: 100px;
+    left: 25%;
+    width: 50%;
+    height: 450px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+    position: relative;
+    border-radius: 30px;
+    padding: 50px;
+}
+#skill .title{
+    color: #6d9daf;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#skill .s1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+#skill .s1 span{
+    color: #443832;
+}
+#skill .bar{
+    height: 16px;
+    width: 100%;
+    padding: 5px 8px;
+    background-color: rgb(199, 196, 196);
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#skill .barline1{
+    width: 0%;
+    height: 6px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    position: relative;
+    border-radius: 50px;
+    animation: barline1-fill 2s forwards;
+}
+@keyframes barline1-fill{
+    100%{
+        width: 85%;
+    }
+}#skill .barline2{
+    width: 0%;
+    height: 6px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    position: relative;
+    border-radius: 50px;
+    animation: barline2-fill 2s forwards;
+    animation-delay: 0.2s;
+}
+@keyframes barline2-fill{
+    100%{
+        width: 80%;
+    }
+}#skill .barline3{
+    width: 0%;
+    height: 6px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    position: relative;
+    border-radius: 50px;
+    animation: barline3-fill 2s forwards;
+    animation-delay: 0.4s;
+}
+@keyframes barline3-fill{
+    100%{
+        width: 75%;
+    }
+}#skill .barline4{
+    width: 0%;
+    height: 6px;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    position: relative;
+    border-radius: 50px;
+    animation: barline4-fill 2s forwards;
+    animation-delay: 0.6s;
+}
+@keyframes barline4-fill{
+    100%{
+        width: 73%;
+    }
+}
+
+/*act*/
+#activity .activity1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 180px;
+}
+#activity .activity1title{
+    color: #6d9daf;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#activity .act{
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;   
+}
+.act img{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+}
+.act-word{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: 	#D6D6AD;
+    height: 300px;
+    width: 48%;
+    color: 	#003D79;
+    padding: 20px;
+    z-index: -1;
+}
+.act-word h1{
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+.act-word p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.act a{
+    display: block;
+}
+.act:hover .act-word{
+    left:500px;
+}
+.act a:after{
+    content: "";
+}
+.act a:hover:after{
+    margin-left: 500px;
+    transition-duration: 0.5s;
+}
+/*act end*/
+
+/*work*/
+#work .work1title{
+    color: #6d9daf;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+#work .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:5px 0;
+    padding-left: 10px;
+}
+#work .box-container .box{
+    width:250px;
+    margin:20px 5px;
+    padding-left: 30px;
+    position: relative;
+}
+#work .box-container .box a{
+    text-decoration: none;
+}
+#work .box-container .box span{
+    font-size: 20px;
+    background:#222;
+    color:#fff;
+    border-radius: 30px;
+    padding:5px 25px;
+}
+#work .box-container .box h3{
+    font-size: 20px;
+    color:#000;
+    padding-top: 6px;
+}
+#work .box-container .box p{
+    font-size: 15px;
+    color:#000;
+    font-weight: bold;
+    padding: 3px 0;
+    letter-spacing: 3px;
+}
+#work .box-container .box a:hover{
+    background-color: red;
+}
+/*work end*/
+
